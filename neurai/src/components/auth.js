@@ -4,6 +4,7 @@ import {googleProvider} from "../config/firebase"
 import { createUserWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 import "../css/auth.css"
 
+
 export const Auth = () => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
@@ -35,6 +36,7 @@ export const Auth = () => {
         }
     }
     return (
+        
         <div className='container'>
             <h1>Create account</h1>
             <input
@@ -51,6 +53,7 @@ export const Auth = () => {
             <button onClick={logOut}>Log out</button>
             <button onClick={SignUp}>Sign up</button>
             <button onClick={googleSignUp}>Google</button>
+            <div className="g-signin2" data-width="300" data-height="200" data-longtitle="true"></div>
         </div>
     )
 }
