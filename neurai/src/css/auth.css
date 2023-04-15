@@ -13,10 +13,10 @@ body {
     max-width: 500px;
     margin: 50px auto;
     padding: 30px;
-    background-color: #f7f7f7;
+    background-color: #f7f3f3;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    height: 50vh;
+    height: 60%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -25,6 +25,7 @@ body {
 a {
     float: right;
     display: block;
+    color: black;
     margin-bottom: 20px;
 }
 
@@ -149,7 +150,7 @@ nav {
   }
   
   nav a {
-    color: hsl(0, 0%, 100%);
+    color: black;
     text-decoration: none;
     padding: 10px;
     margin-left: 40px;
@@ -176,8 +177,83 @@ nav {
     border-radius: 5px;
   }
 
+  a {
+    color: black;
+  }
 
 .aanoy {
     display: block;
     margin-bottom: 20px;
+}
+
+img {
+	width : 20px;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #f2f2f2;
+}
+
+.login-button {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 50px;
+  background-color: #fff;
+  color: #666;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.signup-container {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.sign-up {
+    width: 25%;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: ease-in 300ms;
+}
+
+.sign-up:hover {
+    transform: scale(1.2);
+}
+
+.forgot {
+    color: black;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 300;
 }

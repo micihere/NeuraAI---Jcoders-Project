@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:ital,wght@0,300;0,500;0,700;1,600;1,700&display=swap');
+
+ * {
+    font-family: Montserrat;
+ }
+
+ body {
+    background-color: #4d4f52;
+ }
+
+.conatiner {
+    display:flex;
+    width:100%;
+    justify-content:center;
+    margin-top:5px;
+  }
+  
+  .searchint {
+    margin-left: 5px;
+    width: 15%;
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid #7cb518;
+    outline: none;
+    transition: 300ms;
+    border: none;
+  }
+
+  .searchint:focus {
+    width: 30%;
+  }
+
+  .searchbtn {
+    border-radius: 5px;
+    width: 70px;
+    height: 30px;
+    transition: 300ms;
+    background-color: #32b518;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+
+  .searchbtn:hover {
+    transform: scale(1.2);
+  }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { auth } from "../config/firebase"
 import { googleProvider } from "../config/firebase"
-import { createUserWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { createUserWithEmailAndPassword, signInWithPopup, signOut , signInWithCredential } from "firebase/auth";
 import { onAuthStateChanged } from "firebase/auth";
 import "../css/auth.css"
 import { useNavigate } from 'react-router-dom';
@@ -46,11 +46,6 @@ export const Auth = () => {
 
         <div className='container'>
             <h1>Create account</h1>
-            <input
-                placeholder="Full name" type="text"
-                onChange={(e) => setEmail(e.target.value)}
-                className='inputs'
-            />
             <input
                 placeholder="Email" type="email"
                 onChange={(e) => setEmail(e.target.value)}
